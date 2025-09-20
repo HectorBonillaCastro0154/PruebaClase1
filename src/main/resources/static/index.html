@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora con Mascota</title>
+  <style>
+    body { font-family: monospace; }
+    pre { font-size: 14px; }
+    .resultado { font-weight: bold; margin-top: 10px; }
+  </style>
+<link rel="stylesheet" href="/css/style.css"><!-- Llamado css -->
+
+</head>
+<div>
+  <h1>Calculadora con Mascota</h1>
+
+  <!-- Mascota -->
+  <h2>Mascota</h2>
+  <div class="botones"></div>
+  <button onclick="verSaludo()">Ver saludo</button>
+  <button onclick="verBaile()">Ver Baile</button>
+  <button onclick="detenerBaile()">Detener</button>
+   <button onclick="ocultarMascota()">Ocultar</button>
+</div>
+    <div id="mascota"></div>
+  
+  
+  <!-- Calculadora -->
+  <p></p><h2>Operaciones: </h2> Escribe dos números y selecciona la operacion que deseas realizar.<br></p>
+  <label>Número A: <input type="number" id="numA" ></label>
+  <label>Número B: <input type="number" id="numB" ></label>
+  <br><br>
+
+  <div class="botones">
+  <button onclick="calcular('sumar')">Sumar</button>
+  <button onclick="calcular('restar')">Restar</button>
+  <button onclick="calcular('multiplicar')">Multiplicar</button>
+  <button onclick="calcular('dividir')">Dividir</button>
+  <button onclick="borrarCalculo()">Borrar</button>
+   </div>
+
+  <div id="resultado" class="resultado">Resultado:</div>
+
+  <!--Script de mascota - saludo - baile-->
+  <script src="/js/script.js"></script>
+</body>
+
+<footer>
+  <p>© 2025 Calculadora con Mascota  | Arquitectura de software</p>
+</footer>
+</html>
+
